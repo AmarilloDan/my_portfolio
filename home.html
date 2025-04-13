@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="skill.html">
+    <link href="myproj.html">
+    <link href="aboutme.html">
+    <style>
+        
+        .menu-toggle {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 995px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav {
+                display: none;
+                position: absolute;
+                top: 60px;
+                right: 10px;
+                width: 200px;
+                background: rgba(255, 255, 255, 0.9);
+                border-radius: 10px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                text-align: center;
+            }
+
+            nav.active {
+                display: block;
+            }
+
+            nav a {
+                display: block;
+                padding: 10px;
+                font-size: 1.8rem;
+                margin: 5px 0;
+                border-radius: 5px;
+                transition: background 0.3s ease;
+            }
+
+            nav a:hover {
+                background: rgba(0, 0, 0, 0.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"> My Portfolio</a>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <nav id="nav-menu">
+            <a href="#" class="active">Home</a>
+            <a href="aboutme.html">About me</a>
+            <a href="skill.html">Skills</a>
+            <a href="myproj.html">My Projects</a>
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-img">
+            <img src="467773403_1695945834312519_4731203358551685621_n.jpg" alt="My picture">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I'm <span>Dan Rainiel Amarillo</span></h1>
+            <h3 class="typing-text"><span></span></h3><br>
+        </div>
+    </section>
+</body>
+</html>
